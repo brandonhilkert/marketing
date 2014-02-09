@@ -4,3 +4,14 @@
 
 @import "twitter/bootstrap";
 @import "font-awesome";
+
+body {
+  margin: 30px;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.row {
+  margin-bottom: 15px;
+}

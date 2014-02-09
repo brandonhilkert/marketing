@@ -1,0 +1,95 @@
+<div class="form-group">
+  <%= text_field_tag :title, "", placeholder: "Title", class: "form-control input-lg" %>
+</div>
+
+<div class="form-group">
+  <%= text_field_tag :url, "", placeholder: "URL", class: "form-control input-lg" %>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <%= text_field_tag :source, "", placeholder: "Source", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-xs-4">
+    <%= text_field_tag :medium, "", placeholder: "Medium", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-xs-4">
+    <%= text_field_tag :campaign, "", placeholder: "Campaign", class: "form-control input-lg" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <button class="btn btn-lg btn-success" data-behavior="generate-links">Generate <%= fa_icon("arrow-right") %></button>
+</div>
+
+<h2>Sites</h2>
+
+<div class="row">
+  <div class="col-md-2">
+    Reddit
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :reddit_title, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :reddit_url, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-2">
+    <a href="" class="btn btn-lg btn-success" target="_blank">Go <%= fa_icon("arrow-right") %></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    RubyFlow
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :rubyflow_title, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :rubyflow_url, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-2">
+    <a href="" class="btn btn-lg btn-success" target="_blank">Go <%= fa_icon("arrow-right") %></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    FB
+  </div>
+
+  <div class="col-md-8">
+    <%= text_area_tag :fb_body, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-2">
+    <a href="" class="btn btn-lg btn-success" target="_blank">Go <%= fa_icon("arrow-right") %></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    HN
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :hn_title, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-4">
+    <%= text_field_tag :hn_url, "", class: "form-control input-lg" %>
+  </div>
+
+  <div class="col-md-2">
+    <a href="" class="btn btn-lg btn-success" target="_blank">Go <%= fa_icon("arrow-right") %></a>
+  </div>
+</div>
