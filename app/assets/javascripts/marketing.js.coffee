@@ -4,6 +4,7 @@ App.Marketing =
     App.Hn.init()
     App.Rubyflow.init()
     App.Fb.init()
+    App.Gp.init()
 
   title: ->
     $("#title").val()
