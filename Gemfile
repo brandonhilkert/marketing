@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.13'
+
+gem "pg"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -25,19 +27,7 @@ gem 'turbolinks'
 
 
 group :development, :test do
-  gem "rspec-rails"
   gem "pry"
-  gem "sqlite3"
-  gem "better_errors"
-  gem "binding_of_caller"
-end
-
-group :test do
-  gem "factory_girl_rails"
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "database_cleaner"
-  gem "shoulda-matchers"
 end
 
 group :development do
@@ -45,11 +35,10 @@ group :development do
 end
 
 group :production do
-  gem "pg"
   gem "rails_12factor"
   gem "heroku-deflater"
 end
 
 gem "anjlab-bootstrap-rails", require: "bootstrap-rails", github: "anjlab/bootstrap-rails"
 gem "font-awesome-rails"
-gem "passenger"
+gem "unicorn"
