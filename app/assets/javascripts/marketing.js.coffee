@@ -3,7 +3,6 @@ App.Marketing =
     App.Reddit.init()
     App.Hn.init()
     App.Rubyflow.init()
-    App.Fb.init()
     App.Gp.init()
 
   title: ->

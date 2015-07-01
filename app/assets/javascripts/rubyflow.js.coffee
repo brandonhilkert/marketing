@@ -7,7 +7,7 @@ App.Rubyflow =
     App.Marketing.title()
 
   body: ->
-    "I wrote a new post on #{App.Rubyflow.link()}. Hope you enjoy!"
+    "I wrote a new article on #{App.Rubyflow.link()}. Hope you enjoy!"
 
   link: ->
     "<a href='#{App.Rubyflow.url()}'>#{App.Rubyflow.title()}</a>"
